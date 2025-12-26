@@ -9,20 +9,20 @@ h1 {
     margin: 20px 0;
 }
 
-.item {
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.item img {
+.gallery img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2s;
 }
 
-.item img:hover {
+.gallery img:hover {
     transform: scale(1.05);
 }
 
