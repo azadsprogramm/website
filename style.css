@@ -29,3 +29,29 @@ h1 {
 .gallery {
     text-align: left;
 }
+.cover-container {
+    position: relative;
+    width: 180px; /* Bildbreite */
+    height: 250px; /* Bildhöhe */
+}
+
+.cover-container .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* sanfte Transition */
+}
+
+.cover-container .hover {
+    opacity: 0; /* standardmäßig unsichtbar */
+}
+
+.cover-container:hover .hover {
+    opacity: 1; /* beim Hover sichtbar */
+}
+
+.cover-container:hover .default {
+    opacity: 0; /* Standardbild ausblenden */
+}
