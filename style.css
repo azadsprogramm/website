@@ -29,25 +29,6 @@ body {
 
 .cover-container:hover .default {
     opacity: 0; /* Standardbild ausblenden */
-}
-
-
-h1 {
-    margin: 20px 0;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.2s;
-}
 
 .gallery {
     text-align: left;
