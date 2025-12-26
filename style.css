@@ -20,18 +20,9 @@ h1 {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2s;
+    text-align: center;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-}
-
-.gallery img {
-    text-align: center;
-}
-
-.gallery img p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #ddd;
 }
