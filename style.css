@@ -16,11 +16,15 @@ h1 {
     padding: 20px;
 }
 
+.item {
+    text-align: center;
+    color: red; /* TEST */
+}
+
 .gallery img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2s;
-    text-align: center;
 }
 
 .gallery img:hover {
