@@ -9,16 +9,6 @@ h1 {
     margin: 20px 0;
 }
 
-.item {
-    text-align: center;
-}
-
-.item p {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #ddd;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -34,4 +24,14 @@ h1 {
 
 .gallery img:hover {
     transform: scale(1.05);
+}
+
+.item {
+    text-align: center;
+}
+
+.item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ddd;
 }
