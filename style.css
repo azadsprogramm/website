@@ -4,6 +4,28 @@ body {
     color: white;
     text-align: center;
 }
+
+h1 {
+    margin: 20px 0;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
 .cover-container {
     position: relative;
     width: 180px; /* Bildbreite */
@@ -30,6 +52,6 @@ body {
 .cover-container:hover .default {
     opacity: 0; /* Standardbild ausblenden */
 
-.gallery {
+.item {
     text-align: left;
 }
