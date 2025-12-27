@@ -1,12 +1,38 @@
 body {
+    background-color: #121212; /* dunkles Grau/Schwarz */
+    color: #ffffff; /* Text weiß für Lesbarkeit */
     font-family: Arial, sans-serif;
-    background: #111;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
     color: white;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
 }
 
 h1 {
-    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
 }
 
 .title {
@@ -45,6 +71,10 @@ h1 {
     color: #26bd00;
 }
 
+.info {
+    font-size: 16px;
+    color: #ffe600
+}
 
 .gallery {
     display: flex;
