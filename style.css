@@ -65,6 +65,7 @@ h1 {
 
 .cover-container:hover .default {
     opacity: 0; /* Standardbild ausblenden */
+}
 
 .gallery {
     text-align: left;
