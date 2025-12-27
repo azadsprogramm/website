@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mangasammlung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hauptmenü</a></li>
+        </ul>
+    </nav>
+    <h1>azadsprogramm.de</h1>
+
+<div class="gallery"> <!--Slab1-->
+    <div class="cover-container">
+        <img class="cover default" src="images/slab1.jpg">
+        <img class="cover hover" src="images/slab1.jpg">
+    </div>
+        <div>
+            <p class="title">Civil War #4 Sketch Cover (Marvel, 2006)</p>
+            <p>8.0 Bewertung, 1:75 Variant Cover</p>
+            <p class="info">signiert von Dexter Vines (Inker) am 14.03.2015</p>
+            <p class="info">signiert von Steve McNiven (Penciler) am 28.03.2015</p>
+            <p class="author">Diese Ausgabe ist deswegen besonders, weil Thor den Anti-Registration Helden Goliath (Bill Foster) tötet, <br> was einer der meistdiskutiertesten Momente der Civil War Serie ist. Ausgabe 4 ist demnach von entscheidender <br> Bedeutung, weil sie die Dynamik des Konflikts verändert.</p>
+    </div>
+</div>
+<div class="gallery"> <!--Slab2-->
+    <div class="cover-container">
+        <img class="cover default" src="images/slab2.jpg">
+        <img class="cover hover" src="images/slab2.jpg">
+    </div>
+        <div>
+            <p class="title">Venom #25 bzw. #190 Sketch Cover (Marvel, 2020)</p>
+            <p>9.8 Bewertung, Diamond Retailer Summit Variant</p>
+            <p class="info">limitiert auf 3.000 Exemplare weltweit</p>
+            <p class="author">Mit einem unglaublichen Ryan Stegman Cover aus dem legendären 2018 Donny Cates run der Venom Serie ist <br> dieses Heft ein moderner Klassiker! Inhaltlich wird in dieser Ausgabe die Venom Island Storyline abgeschlossen <br> und Eddie Brock steht vor lebensverändernden Entscheidungen. </p>
+    </div>
+</div>
+<div class="gallery"> <!--Slab3-->
+    <div class="cover-container">
+        <img class="cover default" src="images/slab3.jpg">
+        <img class="cover hover" src="images/slab3.jpg">
+    </div>
+        <div>
+            <p class="title">Spider-Man #7 bzw. #163 El Quinto Mundo Cover (Marvel, 2023)</p>
+            <p>9.2 Bewertung, Mexico Exclusive Foil Cover</p>
+            <p class="info">signiert von Humberto Ramos (Cover Artist) am 03.05.2024</p>
+            <p class="info">limitiert auf 1.000 Exemplare weltweit</p>
+            <p class="author">Ausgabe #7 der 2022er Spidey-Reihe ist vor allem für den entscheidenen Schluss des Multiversum-Arcs bedeutsam, <br> aber auch für den ersten Auftritt des Spider-Boy! Dieses Foil-Cover gab es exklusiv auf der CCXPMX 2024 <br> (Comic Con Experience Mexico 2024) und wurde dort ebenfalls vom Cover Artist signiert.</p>
+    </div>
+</div>
+<div class="gallery"> <!--Slab4-->
+    <div class="cover-container">
+        <img class="cover default" src="images/slab4.jpg">
+        <img class="cover hover" src="images/slab4.jpg">
+    </div>
+        <div>
+            <p class="title">Amazing Spider-Man #112 (Marvel, 1972)</p>
+            <p>7.5 Bewertung, U.K. Variant</p>
+            <p class="info">53 Jahre altes Heft aus dem Bronze Age der ASM Reihe</p>
+            <p class="author">Dieses Heft zeigt Peter Parkers Verletzlichkeit und die Spannung zwischen seinem Privatleben und dem Superhelden-<br>Dasein. Als einer der frühen Amazing Spider-Man Ausgaben zeigt dieses Heft Themen wie Verlust, Verantwortung und<br> moralische Konflikte. Auf der letzten Seite sieht man bereits Doc Ock, welcher in den folgenden Ausgaben (113-115)<br> eine große Rolle spielen soll. </p>
+    </div>
+</div>
+<script> //Progressbar
+    document.querySelectorAll(".gallery").forEach(gallery => {
+        const gelesenP = gallery.querySelector(".gelesen");
+        const progress = gallery.querySelector(".progress");
+    
+        if (!gelesenP || !progress) return;
+    
+        // Text z.B. "483/700 Kapitel"
+        const text = gelesenP.textContent;
+    
+        // Zahlen extrahieren
+        const match = text.match(/(\d+)\s*\/\s*(\d+)/);
+        if (!match) return;
+    
+        const gelesen = parseInt(match[1], 10);
+        const gesamt = parseInt(match[2], 10);
+    
+        const prozent = Math.round((gelesen / gesamt) * 100);
+    
+        progress.style.width = prozent + "%";
+        progress.textContent = prozent + "%";
+});
+</script>
+
+</body>
+</html>
