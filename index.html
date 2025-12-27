@@ -2,144 +2,16 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine Mangasammlung</title>
+    <title>azadsprogramm.de</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Meine Mangasammlung</h1>
-
-<div class="gallery"> <!--Naruto-->
-    <div class="cover-container">
-        <img class="cover default" src="images/naruto_de.jpg">
-        <img class="cover hover" src="images/naruto_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Naruto / ―ナルト― (1999-2014)</p>
-            <p class="author">Mashashi Kishimoto</p>
-            <p class="complete">72/72 Bände</p>
-            <p class="price">Neupreis: 504,00€ = 7,00€ pro Band</p>
-            <p class="price">bezahlt: 305,56€ = 4,24€ pro Band</p>
-            <p class="gelesen">483/700 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-    </div>
-</div>
-<div class="gallery"> <!--Naruto ScSp-->
-    <div class="cover-container">
-        <img class="cover default" src="images/naruto_scsp_de.jpg">
-        <img class="cover hover" src="images/naruto_scsp_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Naruto The Seventh Hokage and the Scarlet Spring / ―ナルト― 外伝 七代目火影と緋色の花つ月 (2015-2015)</p>
-            <p class="author">Mashashi Kishimoto</p>
-            <p class="complete">1/1 Band</p>
-            <p class="price">Neupreis: 7,00€ = 7,00€ pro Band</p>
-            <p class="price">bezahlt: 7,00€ = 7,00€ pro Band</p>
-            <p class="gelesen">0/10 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-</div>
-<div class="gallery"> <!--Boruto-->
-    <div class="cover-container">
-        <img class="cover default" src="images/boruto_de.jpg">
-        <img class="cover hover" src="images/boruto_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Boruto / ―ボルト― (2016-2023)</p>
-            <p class="author">Mashashi Kishimoto, Mikio Ikemoto, Ukyou Kodachi</p>
-            <p class="complete">20/20 Bände</p>
-            <p class="price">Neupreis: 140,00€ = 7,00€ pro Band</p>
-            <p class="price">bezahlt: 121,99€ = 6,10€ pro Band</p>
-            <p class="gelesen">0/81 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-</div>
-<div class="gallery"> <!--Samurai 8-->
-    <div class="cover-container">
-        <img class="cover default" src="images/samurai8_de.jpg">
-        <img class="cover hover" src="images/samurai8_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Samurai 8 / サムライ8 (2019-2020)</p>
-            <p class="author">Mashashi Kishimoto, Akira Ookubo</p>
-            <p class="complete">5/5 Bände</p>
-            <p class="price">Neupreis: 35,00€ = 7,00€ pro Band</p>
-            <p class="price">bezahlt: 27,00€ = 5,40€ pro Band</p>
-            <p class="gelesen">0/43 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-</div>
-<div class="gallery"> <!--Sasuke-->
-    <div class="cover-container">
-        <img class="cover default" src="images/sasuke_de.jpg">
-        <img class="cover hover" src="images/sasuke_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Sasuke Retsuden / サスケ烈伝 (2022-2023)</p>
-            <p class="author">Mashashi Kishimoto, Jun Esaka, Shingo Kimura</p>
-            <p class="complete">2/2 Bände</p>
-            <p class="price">Neupreis: 15,00€ = 7,50€ pro Band</p>
-            <p class="price">bezahlt: 15,00€ = 7,50€ pro Band</p>
-            <p class="gelesen">0/10 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-</div>
-<div class="gallery"> <!--Konoha-->
-    <div class="cover-container">
-        <img class="cover default" src="images/konoha_de.jpg">
-        <img class="cover hover" src="images/konoha_jp.jpg">
-    </div>
-        <div>
-            <p class="title">Konoha Shinden / 木ノ葉新伝 (2022-2023)</p>
-            <p class="author">Mashashi Kishimoto, Shou Hinata, Natsuo Sai</p>
-            <p class="complete">2/2 Bände</p>
-            <p class="price">Neupreis: 15,00€ = 7,50€ pro Band</p>
-            <p class="price">bezahlt: 15,00€ = 7,50€ pro Band</p>
-            <p class="gelesen">0/15 Kapitel</p>
-
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-        </div>
-</div>
-<script> //Progressbar
-    document.querySelectorAll(".gallery").forEach(gallery => {
-        const gelesenP = gallery.querySelector(".gelesen");
-        const progress = gallery.querySelector(".progress");
-    
-        if (!gelesenP || !progress) return;
-    
-        // Text z.B. "483/700 Kapitel"
-        const text = gelesenP.textContent;
-    
-        // Zahlen extrahieren
-        const match = text.match(/(\d+)\s*\/\s*(\d+)/);
-        if (!match) return;
-    
-        const gelesen = parseInt(match[1], 10);
-        const gesamt = parseInt(match[2], 10);
-    
-        const prozent = Math.round((gelesen / gesamt) * 100);
-    
-        progress.style.width = prozent + "%";
-        progress.textContent = prozent + "%";
-});
-</script>
-
+    <nav>
+        <ul>
+            <li><a href="mangas.html">Mangas</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <!-- Weitere Links können hier hinzugefügt werden -->
+        </ul>
+    </nav>
 </body>
 </html>
