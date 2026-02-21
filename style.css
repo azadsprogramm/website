@@ -123,7 +123,7 @@ h1 {
     height: 50px; /* Bildhöhe */
 }
 
-.cover-container2 .cover2 {
+.cover-container2 .cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -132,15 +132,15 @@ h1 {
     transition: opacity 0.5s ease; /* sanfte Transition */
 }
 
-.cover-container2 .hover2 {
+.cover-container2 .hover {
     opacity: 0; /* standardmäßig unsichtbar */
 }
 
-.cover-container2:hover .hover2 {
+.cover-container2:hover .hover {
     opacity: 1; /* beim Hover sichtbar */
 }
 
-.cover-container2:hover .default2 {
+.cover-container2:hover .default {
     opacity: 0; /* Standardbild ausblenden */
 }
 .gallery {
