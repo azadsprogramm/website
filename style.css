@@ -113,8 +113,8 @@ h1 {
 
 .cover-container {
     position: relative;
-    width: 186px; /* Bildbreite */
-    height: 284px; /* Bildhöhe */
+    width: 500px; /* Bildbreite */
+    height: 250px; /* Bildhöhe */
 }
 
 .cover-container .cover {
