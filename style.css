@@ -96,6 +96,12 @@ h1 {
     height: 284px; /* Bildhöhe */
 }
 
+.cover-container2 {
+    position: relative;
+    width: 1000px; /* Bildbreite */
+    height: 500px; /* Bildhöhe */
+}
+
 .cover-container .cover {
     position: absolute;
     top: 0;
