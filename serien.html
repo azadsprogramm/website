@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Serien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hauptmenü</a></li>
+        </ul>
+    </nav>
+    <h1>azadsprogramm.de</h1>
+<div class="gallery">
+    <div class="cover-container">
+        <img class="cover default" src="images/naruto_de.jpg">
+        <img class="cover hover" src="images/naruto_jp.jpg">
+    </div>
+        <div>
+            <p class="title">Naruto / ―ナルト― (1999-2014)</p>
+            <p class="author">Mashashi Kishimoto</p>
+            <p class="complete">72/72 Bände</p>
+            <p class="price">Neupreis: 504,00€ = 7,00€ pro Band</p>
+            <p class="price">bezahlt: 305,56€ = 4,24€ pro Band</p>
+            <p class="gelesen">483/700 Kapitel</p>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+    </div>
+</div>
+<script> //Progressbar
+    document.querySelectorAll(".gallery").forEach(gallery => {
+        const gelesenP = gallery.querySelector(".gelesen");
+        const progress = gallery.querySelector(".progress");
+    
+        if (!gelesenP || !progress) return;
+    
+        // Text z.B. "483/700 Kapitel"
+        const text = gelesenP.textContent;
+    
+        // Zahlen extrahieren
+        const match = text.match(/(\d+)\s*\/\s*(\d+)/);
+        if (!match) return;
+    
+        const gelesen = parseInt(match[1], 10);
+        const gesamt = parseInt(match[2], 10);
+    
+        const prozent = Math.round((gelesen / gesamt) * 100);
+    
+        progress.style.width = prozent + "%";
+        progress.textContent = prozent + "%";
+});
+</script>
+
+</body>
+</html>
