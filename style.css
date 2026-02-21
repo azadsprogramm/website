@@ -90,6 +90,27 @@ h1 {
     transition: transform 0.2s;
 }
 
+.gallery {
+    text-align: left;
+}
+
+.galleryy {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.galleryy img {
+    width: 100%;
+    border-radius: 0px;
+    transition: transform 0.2s;
+}
+
+.galleryy {
+    text-align: left;
+}
+
 .cover-container {
     position: relative;
     width: 186px; /* Bildbreite */
@@ -142,9 +163,6 @@ h1 {
 
 .cover-containerr:hover .default {
     opacity: 0; /* Standardbild ausblenden */
-}
-.gallery {
-    text-align: left;
 }
 
 .progress-bar {
