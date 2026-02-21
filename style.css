@@ -117,13 +117,13 @@ h1 {
     opacity: 0; /* Standardbild ausblenden */
 }
 
-.cover-container2 {
+.cover-containerr {
     position: relative;
     width: 100px; /* Bildbreite */
     height: 50px; /* Bildhöhe */
 }
 
-.cover-container2 .cover {
+.cover-containerr .cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -132,15 +132,15 @@ h1 {
     transition: opacity 0.5s ease; /* sanfte Transition */
 }
 
-.cover-container2 .hover {
+.cover-containerr .hover {
     opacity: 0; /* standardmäßig unsichtbar */
 }
 
-.cover-container2:hover .hover {
+.cover-containerr:hover .hover {
     opacity: 1; /* beim Hover sichtbar */
 }
 
-.cover-container2:hover .default {
+.cover-containerr:hover .default {
     opacity: 0; /* Standardbild ausblenden */
 }
 .gallery {
