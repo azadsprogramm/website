@@ -121,6 +121,21 @@ h1 {
     opacity: 0; /* Standardbild ausblenden */
 }
 
+.comic-container {
+    position: relative;
+    width: 931px; /* Bildbreite */
+    height: 1417px; /* Bildhöhe */
+}
+
+.comic-container .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* sanfte Transition */
+}
+
 .progress-bar {
     width: 250px;
     background-color:#e0e0e0;
