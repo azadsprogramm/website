@@ -123,8 +123,8 @@ h1 {
 
 .comic-container {
     position: relative;
-    width: 931px; /* Bildbreite */
-    height: 1417px; /* Bildhöhe */
+    width: 650px; /* Bildbreite */
+    height: 1000px; /* Bildhöhe */
 }
 
 .comic-container .cover {
